@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables in HTML</title>
+</head>
+<body>
+    <style>
+        table{
+         
+         width:50%;
+         margin-left: auto;
+         margin-right: auto;
+        }
+.right-col{
+    text-align: end;
+}
+ td,th{
+    border: 2px solid black;
+   
+
+} 
+.table1 .row2{
+    font-weight:bold ;
+}
+
+.table1 td{
+    height: 20px;
+    width:220px;
+    border: 3px solid black;
+}
+.table1 th{
+    height: 20px;
+    width:220px ;
+}
+
+
+.table2 th{
+    height: 24px;
+    width:220px ;
+}
+.table2 td{
+    height:25px;
+    width:220px;
+    border: 3px solid black;
+}
+.table2 th{
+    height: 24px;
+    width:220px ;
+}
+
+
+
+ .table3 td {
+    height: 23px;
+    width: 0%;
+   
+    border:   3px solid black; 
+}
+
+.table3 th{
+    height:25px;
+
+}
+
+
+
+
+
+
+
+
+
+
+    </style>
+
+
+<!-- Table 1 implementation below -->
+
+<table class="table1"  style="border-collapse: collapse; margin-top: 2%; ">
+    <tr>
+        <th class="left" style="text-align: start;" >left</th>
+        <th style="text-align:center;">center</th>
+        <th class="right-col">right</th>
+    </tr>
+    <tr class="row2">
+        <td>left</td>
+        <td style="text-align:center;">center</td>
+        <td class="right-col">right</td>
+    </tr>
+    <tr>
+        <th style="text-align: start;"  class="left">left</th>
+        <th style="text-align:center;">center</th>
+        <th class="right-col">right</th>
+    </tr>
+</table>
+
+
+
+
+<!-- Table 2 implementation below -->
+ 
+<table class="table2"  style="border-collapse: collapse; margin-top: 4%;">
+    <tr>
+      <th style="text-align: center; font-size: 1.3rem;" colspan="6">Heading</th>
+    </tr>
+    <tr>
+        <td colspan="6" ></th>
+        <br>
+        
+    </tr>
+    <tr>
+        <td rowspan="4" style="width:220px"></td>
+        <td style="text-align:center;"></td>
+        
+        <td class="right-col" ></td>
+        <td class="right-col"></td>
+        <td class="right-col"></td>
+        <td class="right-col"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td style="text-align:center;" colspan="3" rowspan="2"></td>
+
+        <td class="right-col"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td style="text-align:center;"></td>
+     
+       
+    </tr>
+    <tr>
+        <td></td>
+        <td style="text-align:center;"></td>
+       
+        <td class="right-col"></td>
+        <td class="right-col"></td>
+        <td class="right-col"></td>
+    </tr>
+    <tr>
+        <th></th>
+        <th style="text-align:center;"></th>
+        <th class="right-col"></th>
+        <th class="right-col"></th>
+        <th class="right-col"></th>
+        <th class="right-col"></th>
+    </tr>
+</table>
+
+
+
+<!-- Table 3 implementation below -->
+
+<table class="table3"  style="border-collapse: collapse;  margin-top: 4%;">
+    <tr>
+      <th ></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr>
+        <td  rowspan="4"  ></td>
+      <td></td>
+      <td  rowspan="4"></td>
+        
+    </tr>
+    <tr>
+        <td style="width:220px"></td> 
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+       
+    </tr>
+    <tr>
+        <th></th>
+        <th style="text-align:center;"></th>
+       
+        <th class="right-col"></th>
+      
+    </tr>
+
+
+</table>
+
+
+
+
+<!-- Table 4 implementation below -->
+
+
+<div >
+    <table style=" margin-top: 4%; margin-bottom: 4%;" >
+      <tr style="height: 60px; background-color: rgb(81, 105, 59);">
+        <td colspan="3"></td>
+      </tr>
+     <tr style="border: 1px double black;">
+      <td style="height:50vh ; width: 20%; "></td> 
+      <td style="height:20vh ;">
+        <img src="./Capture.PNG" alt="Wildlife image" width="89%" height="200%">
+      </td>
+      <td style="height:50vh ; width: 20%;">
+
+      </td>
+     </tr>
+ <tr style="height: 46px; background-color: rgb(45, 45, 107);">
+        <td colspan="3"></td>
+      </tr>
+    
+      </table>
+</div>
+
+
+</body>
+</html>
